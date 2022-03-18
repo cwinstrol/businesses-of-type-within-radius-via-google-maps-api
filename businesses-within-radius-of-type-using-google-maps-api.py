@@ -1,6 +1,6 @@
 import requests,json
 
-key=''
+#key=''
 radius='50000'
 type='book_store'
 keyword=''
