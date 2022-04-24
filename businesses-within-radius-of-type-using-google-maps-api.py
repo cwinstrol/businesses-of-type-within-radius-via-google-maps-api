@@ -1,9 +1,9 @@
 import requests,json
 
 #key=''
+#keyword=''
 radius='50000'
 type='book_store'
-keyword=''
 location='39.16285,-84.81207'
 
 r=requests.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?location='+location+'&radius='+radius+'&type='+type+'&key='+key+')
