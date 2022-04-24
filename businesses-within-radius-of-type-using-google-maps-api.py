@@ -11,14 +11,12 @@ r=requests.get('https://maps.googleapis.com/maps/api/place/nearbysearch/json?loc
 with open('c:\\users\\user\\downloads\\nearbySearch.json','w') as f:
     f.write(json.dumps(r.json(), indent=4, sort_keys=True))
 
-#########################################
 ar=[]
 with open('c:\\users\\user\\downloads\\nearbySearch.json') as f:
     data=json.load(f)
     for i in data['results']:
         #sort for names like dominos
         ar.append(i['place_id'])
-#########################################
 
 with open('c:\\users\\user\\downloads\\details.json','w') as f:
 d={}
